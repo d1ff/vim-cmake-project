@@ -77,7 +77,7 @@ function! s:cmake_project_activate()
     call s:cmake_project_checkplugins()
     call s:cmake_project_remap()
     
-    let g:NERDTreeIgnore = ['\(\.txt\|\.cpp\|\.hpp\|\.c\|\.h\)\@<!$[[file]]']
+    let g:NERDTreeIgnore = ['\(\.qml\|\.thrift\|\.txt\|\.cpp\|\.hpp\|\.c\|\.h\)\@<!$[[file]]']
     let s:cmake_project_source_directory = expand("<afile>:p:h")
     
     if !exists("t:NERDTreeBufName") && g:cmake_project_show_bar == 1 && exists('g:loaded_nerd_tree')
